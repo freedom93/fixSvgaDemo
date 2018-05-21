@@ -32,7 +32,6 @@ export default {
 #roseCanvas{
   width: 100%;
   height: 100%;
-  // background: rgba(255, 255, 255, 0.2);
   margin: auto;
   position: absolute;
   top: 100px;

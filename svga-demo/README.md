@@ -1,4 +1,4 @@
-项目名： vue-simple(yss的VueJs项目模板1)
+项目名： svga-demo(yss的VueJs项目模板1)
 
 项目简介：主要用于初始化移动端的多页面，无vue-router项目，不兼容IE8以及更低版本。
 
