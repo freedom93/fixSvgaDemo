@@ -11,7 +11,8 @@ export default {
   mounted() {
     const player = new window.SVGA.Player('#demoCanvas');
     const parser = new window.SVGA.Parser('#demoCanvas');
-    const svgUrl = `${location.origin}${__PROD__ ? '' : fixUrl}/assets/data/rose.svga`;
+    const svgUrl = `${location.origin}${__PROD__ ? fixUrl : ''}/assets/data/rose.svga`;
+    console.log(svgUrl);
     parser.load(svgUrl, (videoItem) => {
       player.setVideoItem(videoItem);
       player.setText({
