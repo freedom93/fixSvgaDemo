@@ -5,12 +5,13 @@
 </template>
 
 <script>
+const fixUrl = '/fixSvgaDemo/svga-demo/output';
 export default {
   name: 'rose',
   mounted() {
     const player = new window.SVGA.Player('#demoCanvas');
     const parser = new window.SVGA.Parser('#demoCanvas');
-    const svgUrl = `${location.origin}/assets/data/rose.svga`;
+    const svgUrl = `${location.origin}${__PROD__ ? '' : fixUrl}/assets/data/rose.svga`;
     parser.load(svgUrl, (videoItem) => {
       player.setVideoItem(videoItem);
       player.setText({
