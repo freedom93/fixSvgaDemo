@@ -16,7 +16,7 @@ export default {
     parser.load(svgUrl, (videoItem) => {
       player.setVideoItem(videoItem);
       player.setText({
-        text: 'Hello, Freedom!',
+        text: 'Hello, Rose!',
         size: '40px',
         color: '#E9446F',
         offset: { x: 0.0, y: 0.0 },
