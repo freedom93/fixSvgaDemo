@@ -1,0 +1,20 @@
+@import "lib/mixin";
+@import "lib/normalize";
+@import "lib/reset";
+
+@import "common/extend";
+@import "common/base";
+
+html, body {
+    background: pink;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}

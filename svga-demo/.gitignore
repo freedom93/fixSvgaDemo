@@ -1,14 +1,11 @@
 .DS_Store
-node_modules/
-/dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
+node_modules
+npm-debug.log
 .idea
+.zip
+/dev
+/dist
+.sass-cache
+config.json
+output/assets/img/test/
 .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln

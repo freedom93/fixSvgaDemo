@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="description" content="{{description}}">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    {{>flexible}}
+    {{#if __PROD__}}
+    <link rel="stylesheet" href="./assets/css/{{stylesheet}}.css">
+    {{/if}}
+    {{#if __DEV__}}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/vConsole/3.2.0/vconsole.min.js"></script>
+    {{/if}}
+</head>
+<body>
+{% body %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/svgaplayerweb@2.1.0/build/svga.min.js"></script>
+<script src="./assets/js/{{script}}.js"></script>
+</body>
+</html>

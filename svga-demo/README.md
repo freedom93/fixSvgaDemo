@@ -1,21 +1,11 @@
-# svga-demo
+项目名： vue-simple(yss的VueJs项目模板1)
 
-> A Vue.js project
+项目简介：主要用于初始化移动端的多页面，无vue-router项目，不兼容IE8以及更低版本。
 
-## Build Setup
+脚手架：yss（yingshou Scaffolding: 基于 gulp4 和 webpack 的命令行构建工具）
 
-``` bash
-# install dependencies
-npm install
+UI框架： 无
 
-# serve with hot reload at localhost:8080
-npm run dev
+javascript框架：  VueJs
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+暂时yss还不对外开放，可以直接本地起个服务，把output丢到根目录即可访问
