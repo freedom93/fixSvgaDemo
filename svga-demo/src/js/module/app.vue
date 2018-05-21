@@ -1,16 +1,18 @@
 <template>
   <div class="app">
+    <Angel/>
     <Rose/>
   </div>
 </template>
 
 <script>
-import Rose from './rose.vue';
+import Angel from '../component/angel.vue';
+import Rose from '../component/rose.vue';
 
 export default {
   name: 'app',
   components: {
-    Rose,
+    Angel, Rose,
   },
 };
 </script>

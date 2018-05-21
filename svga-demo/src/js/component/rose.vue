@@ -1,6 +1,6 @@
 <template>
   <div class="rose">
-    <div id="demoCanvas"></div>
+    <div id="roseCanvas"></div>
   </div>
 </template>
 
@@ -9,17 +9,17 @@ const fixUrl = '/fixSvgaDemo/svga-demo/output';
 export default {
   name: 'rose',
   mounted() {
-    const player = new window.SVGA.Player('#demoCanvas');
-    const parser = new window.SVGA.Parser('#demoCanvas');
+    const player = new window.SVGA.Player('#roseCanvas');
+    const parser = new window.SVGA.Parser('#roseCanvas');
     const svgUrl = `${location.origin}${__PROD__ ? fixUrl : ''}/assets/data/rose.svga`;
     console.log(svgUrl);
     parser.load(svgUrl, (videoItem) => {
       player.setVideoItem(videoItem);
       player.setText({
-        text: 'Hello, Rose!',
-        size: '40px',
-        color: '#E9446F',
-        offset: { x: 0.0, y: 0.0 },
+        text: 'Hello, Angel!',
+        size: '28px',
+        color: '#F44C7D',
+        offset: { x: 0.0, y: 30.0 },
       }, '11');
       player.startAnimation();
     });
@@ -29,13 +29,13 @@ export default {
 
 <style lang="scss">
 @import "~css/lib/mixin";
-#demoCanvas{
+#roseCanvas{
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  // background: rgba(255, 255, 255, 0.2);
   margin: auto;
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
   right: 0;
   bottom: 0;

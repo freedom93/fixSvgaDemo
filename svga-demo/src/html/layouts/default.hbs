@@ -7,14 +7,19 @@
     <meta name="description" content="{{description}}">
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="applicable-device" content="mobile">
-    <script src="./assets/data/kitty.ico"></script>
+    {{#if __DEV__}}
+    <link rel="shortcut icon" href="./assets/data/kitty.ico" />
+    {{/if}}
+    {{#if __PROD__}}
+    <link rel="shortcut icon" href="./fixSvgaDemo/svga-demo/output/assets/data/kitty.ico" />
+    {{/if}}
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     {{>flexible}}
     {{#if __PROD__}}
     <link rel="stylesheet" href="./assets/css/{{stylesheet}}.css">
     {{/if}}
     {{#if __DEV__}}
-        <script src="//cdnjs.cloudflare.com/ajax/libs/vConsole/3.2.0/vconsole.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vConsole/3.2.0/vconsole.min.js"></script>
     {{/if}}
 </head>
 <body>
